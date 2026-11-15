@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Post</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <article class="post">
+    <header class="post-header">
+      <img class="avatar" src="images/profile.jpg" alt="Profile picture of alexajohn">
+      <span class="username">alexajohn</span>
+      <span class="time"><i class="fas fa-clock" aria-hidden="true"></i> 20 mins</span>
+      <button class="icon-btn more" aria-label="More options" title="More options">
+        <i class="material-icons" aria-hidden="true">more_vert</i>
+      </button>
+    </header>
+
+    <div class="image-wrap">
+      <img class="post-image" src="images/main.jpg" alt="Main photo of the post">
+    </div>
+
+    <footer class="post-footer">
+      <div class="actions">
+        <input type="checkbox" id="save" class="toggle">
+        <label for="save" class="icon-btn save-btn" title="Save post">
+          <span class="sr-only">Save post</span>
+          <i class="far fa-bookmark off" aria-hidden="true"></i>
+          <i class="fas fa-bookmark on" aria-hidden="true"></i>
+        </label>
+
+        <button class="icon-btn" aria-label="Share" title="Share">
+          <i class="fas fa-share-nodes" aria-hidden="true"></i>
+        </button>
+
+        <span class="comments">
+          <i class="material-icons-outlined" aria-hidden="true">chat_bubble_outline</i> 125
+        </span>
+      </div>
+
+      <div class="likes">
+        <input type="checkbox" id="like" class="toggle">
+        <span class="count">852</span>
+        <span class="count-liked">853</span>
+        <label for="like" class="icon-btn like-btn" title="Like post">
+          <span class="sr-only">Like post</span>
+          <i class="far fa-heart off" aria-hidden="true"></i>
+          <i class="fas fa-heart on" aria-hidden="true"></i>
+        </label>
+      </div>
+    </footer>
+  </article>
+</body>
+</html>

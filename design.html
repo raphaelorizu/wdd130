@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Page Design Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "IBM Plex Sans", Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1, h2, h3 { font-family: "Bricolage Grotesque", Arial, sans-serif; }
+    .wire { border: 2px solid #000; padding: 10px; margin-bottom: 10px; background: #f7f7f7; }
+    .wire h3 { margin: 0 0 8px 0; }
+    .wire-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .wire-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .wire-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .box { border: 2px dashed #555; padding: 10px; background: #fff; text-align: center; }
+    .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .swatch { border: 2px solid #000; background: #fff; }
+    .swatch .color { height: 70px; }
+    .swatch p { margin: 8px; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 2px solid #000; padding: 8px; text-align: left; }
+    th { background: #1F3A93; color: #F7FAFC; }
+    .logo-row { display: flex; align-items: center; gap: 20px; }
+    .logo-row img { width: 140px; height: 140px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal Page Design Document</h1>
+    <p>Raphael - WDD 130 - Progress Check 100</p>
+  </header>
+
+  <main>
+    <h2>Wireframe</h2>
+
+    <div class="wire">
+      <h3>HEADER</h3>
+      <div class="wire-row">
+        <div class="box">Logo</div>
+        <div class="box">Site title (h1) + tagline</div>
+      </div>
+    </div>
+
+    <div class="wire">
+      <h3>NAV</h3>
+      <div class="wire-nav">
+        <div class="box">Home</div>
+        <div class="box">WWR</div>
+        <div class="box">ICE</div>
+        <div class="box">About Me</div>
+      </div>
+    </div>
+
+    <div class="wire">
+      <h3>MAIN</h3>
+      <div class="wire-row">
+        <div class="box">Intro: heading, paragraph, link</div>
+        <div class="box">Hero image</div>
+      </div>
+      <div class="wire-cards" style="margin-top:10px;">
+        <div class="box">WWR card</div>
+        <div class="box">ICE card</div>
+        <div class="box">About Me card</div>
+      </div>
+      <div class="wire-row" style="margin-top:10px;">
+        <div class="box">Table: Week, Task, Status</div>
+        <div class="box">Contact form: name, email, message, button</div>
+      </div>
+    </div>
+
+    <div class="wire">
+      <h3>FOOTER</h3>
+      <div class="box">Copyright and course name</div>
+    </div>
+
+    <h2>Logo</h2>
+
+    <div class="logo-row">
+      <img src="logo.svg" alt="Logo: white letter R inside a blue square with a dashed gold border">
+      <p>A white R on a blue square with a dashed gold border, like a drawing guide on a wireframe. File: logo.svg</p>
+    </div>
+
+    <h2>Color Scheme</h2>
+
+    <div class="swatches">
+      <div class="swatch">
+        <div class="color" style="background:#1F3A93;"></div>
+        <p><strong>Blueprint Blue</strong><br>#1F3A93<br>Header, headings, buttons</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background:#5C8DFF;"></div>
+        <p><strong>Sky Blue</strong><br>#5C8DFF<br>Links, hover</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background:#0F1B33;"></div>
+        <p><strong>Ink</strong><br>#0F1B33<br>Body text, footer</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background:#F7FAFC;"></div>
+        <p><strong>Paper</strong><br>#F7FAFC<br>Page background</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background:#C9D3E0;"></div>
+        <p><strong>Fog Gray</strong><br>#C9D3E0<br>Borders, image placeholders</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background:#FFC93C;"></div>
+        <p><strong>Marker Gold</strong><br>#FFC93C<br>Active nav link, accents</p>
+      </div>
+    </div>
+
+    <h2>Fonts</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Font</th>
+          <th>Fallback</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Headings and nav</td>
+          <td style="font-family: 'Bricolage Grotesque', Arial, sans-serif; font-weight: 800;">Bricolage Grotesque</td>
+          <td>Arial, sans-serif</td>
+          <td>Google Fonts</td>
+        </tr>
+        <tr>
+          <td>Body text, forms, table</td>
+          <td style="font-family: 'IBM Plex Sans', Arial, sans-serif;">IBM Plex Sans</td>
+          <td>Arial, sans-serif</td>
+          <td>Google Fonts</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Portal Page Design Document</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphael's Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.svg" alt="Logo: white letter R in a blue square with a dashed gold border" width="80" height="80">
+    <div>
+      <h1>Raphael's Portal</h1>
+      <p>My work for WDD 130</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wwr/index.html">WWR</a></li>
+      <li><a href="ice.html">ICE</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="about.html">Learn more about me</a>
+      </div>
+      <img src="images/hero.png" alt="Hero image for the portal page" width="400" height="250">
+    </section>
+
+    <section class="work">
+      <h2>My Work</h2>
+      <article>
+        <img src="images/wwr.jpg" alt="Preview of the WWR page" width="300" height="180">
+        <h3>WWR</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="wwr/index.html">Visit WWR</a>
+      </article>
+      <article>
+        <img src="images/ice.jpg" alt="Preview of the ICE page" width="300" height="180">
+        <h3>ICE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="ice.html">Visit ICE</a>
+      </article>
+      <article>
+        <img src="images/about.jpg" alt="Preview of the About Me page" width="300" height="180">
+        <h3>About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="about.html">Visit About Me</a>
+      </article>
+    </section>
+
+    <section class="progress">
+      <h2>Progress</h2>
+      <table>
+        <caption>Portal page progress checks</caption>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Task</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Plan and design</td>
+            <td>Done</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Convert to HTML</td>
+            <td>Done</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Convert to CSS</td>
+            <td>Done</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>About page and finishing touches</td>
+            <td>Done</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Raphael &bull; WDD 130 Portal Page</p>
+  </footer>
+</body>
+</html>
